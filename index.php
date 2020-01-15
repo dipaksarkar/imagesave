@@ -54,7 +54,7 @@
         $('#status').hide();
         function saveImage(url){
             var settings = {
-                "url": "http://localhost/rendering/image/save/api.php",
+                "url": "./api.php",
                 "method": "POST",
                 "data": {
                     url: url
@@ -64,7 +64,7 @@
             $.ajax(settings).done(function (response) {
                 $('#status').show()
                 $('.done_url ul').append('<li>' + response + '</li>');
-                console.log('url: ', url);
+                $('#status').scrollTop($('#status')[0].scrollHeight);
             });
         }
 

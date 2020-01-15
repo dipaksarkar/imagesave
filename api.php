@@ -21,4 +21,4 @@
     }
     
 ?> 
-<a href="<?php echo $url;?>"><?php echo $url;?></a>
+<?php echo $dir_name[count($dir_name) - 1]; ?> [<a href="<?php echo $url;?>">Source</a> @ <a href="./<?php echo $img;?>">Downloaded</a> ]
